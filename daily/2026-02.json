@@ -6,45 +6,61 @@
     "2026-02-01": {
       "dayNumber": 1,
       "easy": {
-        "Columns": ["A","B","C","D","E"],
+        "Columns": ["A", "B", "C", "D", "E"],
         "RowCount": 4,
         "PlayableCells": [
-          "A1","B1","C1","D1","E1",
-          "A2","B2","C2","E2",
-          "A3","C3",
+          "A1", "B1", "C1", "D1", "E1",
+          "A2", "B2", "C2", "E2",
+          "A3", "C3",
           "C4"
         ],
-        "Dominoes": ["2,3","4,2","1,0","6,3","5,4","2,0"],
+        "Dominoes": [
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 0 },
+          { "LeftPip": 6, "RightPip": 3 },
+          { "LeftPip": 5, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 0 }
+        ],
         "Rules": [
-          "A1 B1 = 9",
-          "A2 A3 B2 = 10",
-          "C3 C4 = 5",
-          "D1 E1 E2 = 8"
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3", "B2"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4"], "TargetValue": 5 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2"], "TargetValue": 8 }
         ],
         "MetaRules": [
-          { "Type": "COLUMN_SUM", "Column": "B", "Value": 5 },
-          { "Type": "COLUMN_SUM", "Column": "C", "Value": 5 }
+          { "Type": "ColumnSum", "Column": "B", "TargetValue": 5 },
+          { "Type": "ColumnSum", "Column": "C", "TargetValue": 5 }
         ]
       },
       "hard": {
-        "Columns": ["A","B","C","D","E"],
+        "Columns": ["A", "B", "C", "D", "E"],
         "RowCount": 5,
         "PlayableCells": [
-          "A1","B1","C1","D1","E1",
-          "A2","B2","E2",
-          "A3","B3","C3","D3","E3",
-          "A4","C4",
+          "A1", "B1", "C1", "D1", "E1",
+          "A2", "B2", "E2",
+          "A3", "B3", "C3", "D3", "E3",
+          "A4", "C4",
           "C5"
         ],
-        "Dominoes": ["3,3","4,0","2,6","3,1","0,2","6,1","3,3","5,5"],
+        "Dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 0 },
+          { "LeftPip": 2, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 1 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 5, "RightPip": 5 }
+        ],
         "Rules": [
-          "B1 B2 A2 = 15",
-          "D1 E1 E2 E3 D3 = 12",
-          "C3 C4 C5 = 10",
-          "A3 B3 A4 = 9"
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "B2", "A2"], "TargetValue": 15 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2", "E3", "D3"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "C5"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "A4"], "TargetValue": 9 }
         ],
         "MetaRules": [
-          { "Type": "COLUMN_PARITY", "Column": "C", "Value": "EVEN" }
+          { "Type": "ColumnParity", "Column": "C", "Parity": "Even" }
         ]
       }
     }
