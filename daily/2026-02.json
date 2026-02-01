@@ -5,7 +5,16 @@
   "levels": {
     "2026-02-01": {
       "dayNumber": 1,
-      "creator": "KLIPSO",
+
+      "credits": {
+        "easy": {
+          "name": "KLIPSO"
+        },
+        "hard": {
+          "name": "KLIPSO"
+        }
+      },
+
       "easy": {
         "grid": {
           "columns": ["A", "B", "C", "D", "E"],
@@ -36,6 +45,7 @@
           { "type": "Sigma", "axis": "column", "index": "C", "value": 5 }
         ]
       },
+
       "hard": {
         "grid": {
           "columns": ["A", "B", "C", "D", "E"],
