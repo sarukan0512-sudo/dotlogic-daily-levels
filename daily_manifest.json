@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-02-01T00:00:00Z",
+  "currentMonth": "2026-02",
+  "availableMonths": ["2026-02"],
+  "baseUrl": "https://raw.githubusercontent.com/dotlogic-daily-levels/dotlogic-daily-levels/main/daily/"
+}
