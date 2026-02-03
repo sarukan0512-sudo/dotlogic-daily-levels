@@ -164,10 +164,10 @@
         ],
         "rules": [
           { "Name": "Sum", "Type": "Sum", "Cells": ["A1","B1","A2"], "TargetValue": 7 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B3","B4","C3"], "TargetValue": 0 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["D2","E2","D3"], "TargetValue": 12 }
         ],
         "metaRules": [
-          { "type": "Equal", "axis": "group", "index": "B3,B4,C3", "value": 0 },
           { "type": "Even", "axis": "column", "index": "B", "value": 0 },
           { "type": "Sigma", "axis": "column", "index": "D", "value": 9 }
         ]
@@ -195,13 +195,13 @@
           { "LeftPip": 5, "RightPip": 3 }
         ],
         "rules": [
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C1","D1"], "TargetValue": 0 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B2","C2","B3","C3"], "TargetValue": 0 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["A3","A4","B4"], "TargetValue": 10 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["D3","E3","D4","D5"], "TargetValue": 12 },
           { "Name": "Delta", "Type": "Delta", "Cells": ["E1","E2"], "TargetValue": 6 }
         ],
         "metaRules": [
-          { "type": "Equal", "axis": "group", "index": "C1,D1", "value": 0 },
-          { "type": "Equal", "axis": "group", "index": "B2,C2,B3,C3", "value": 0 },
           { "type": "Sigma", "axis": "row", "index": "2", "value": 10 },
           { "type": "Prime", "axis": "column", "index": "B", "value": 0 }
         ]
