@@ -230,6 +230,186 @@
 { "type": "Sigma", "axis": "column", "index": "A", "value": 10 }
 ]
 }
+},
+"2026-02-05": {
+"dayNumber": 5,
+"credits": {
+"easy": { "name": "KLIPSO" },
+"hard": { "name": "KLIPSO" }
+},
+"easy": {
+"grid": {
+"columns": ["A", "B", "C", "D"],
+"rowCount": 4,
+"playableCells": ["A1", "B1", "D1", "A2", "B2", "C2", "D2", "A3", "B3", "C3", "D3", "B4"]
+},
+"dominoes": [
+{ "LeftPip": 4, "RightPip": 0 },
+{ "LeftPip": 3, "RightPip": 6 },
+{ "LeftPip": 3, "RightPip": 3 },
+{ "LeftPip": 4, "RightPip": 2 },
+{ "LeftPip": 5, "RightPip": 5 },
+{ "LeftPip": 6, "RightPip": 4 }
+],
+"rules": [
+{ "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2"], "TargetValue": 10 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "B4"], "TargetValue": 10 },
+{ "Name": "Delta", "Type": "Delta", "Cells": ["B1", "B2"], "TargetValue": 1 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3"], "TargetValue": 9 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3"], "TargetValue": 7 }
+],
+"metaRules": [
+{ "type": "Even", "axis": "row", "index": "2", "value": 0 }
+]
+},
+"hard": {
+"grid": {
+"columns": ["A", "B", "C", "D", "E"],
+"rowCount": 4,
+"playableCells": ["A1", "B1", "C1", "D1", "E1", "B2", "C2", "D2", "E2", "A3", "B3", "C3", "D3", "E3", "A4", "C4", "D4", "E4"]
+},
+"dominoes": [
+{ "LeftPip": 3, "RightPip": 4 },
+{ "LeftPip": 0, "RightPip": 5 },
+{ "LeftPip": 4, "RightPip": 1 },
+{ "LeftPip": 2, "RightPip": 2 },
+{ "LeftPip": 2, "RightPip": 1 },
+{ "LeftPip": 4, "RightPip": 6 },
+{ "LeftPip": 1, "RightPip": 5 },
+{ "LeftPip": 0, "RightPip": 3 },
+{ "LeftPip": 3, "RightPip": 5 }
+],
+"rules": [
+{ "Name": "LessThan", "Type": "LessThan", "Cells": ["A1", "B1"], "TargetValue": 10 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["B2", "C1", "C2"], "TargetValue": 9 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2", "E3", "E4"], "TargetValue": 10 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "D4"], "TargetValue": 9 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["C3", "B3", "C4"], "TargetValue": 10 },
+{ "Name": "Delta", "Type": "Delta", "Cells": ["A3", "A4"], "TargetValue": 3 }
+],
+"metaRules": [
+{ "type": "Prime", "axis": "row", "index": "2", "value": 0 }
+]
+}
+},
+"2026-02-06": {
+"dayNumber": 6,
+"credits": {
+"easy": { "name": "Vannesa" },
+"hard": { "name": "KLIPSO" }
+},
+"easy": {
+"grid": {
+"columns": ["A", "B", "C", "D", "E"],
+"rowCount": 4,
+"playableCells": ["C1", "D1", "E1", "A2", "B2", "C2", "E2", "B3", "C3", "D3", "E3", "B4"]
+},
+"dominoes": [
+{ "LeftPip": 5, "RightPip": 5 },
+{ "LeftPip": 3, "RightPip": 2 },
+{ "LeftPip": 6, "RightPip": 0 },
+{ "LeftPip": 1, "RightPip": 4 },
+{ "LeftPip": 5, "RightPip": 6 },
+{ "LeftPip": 4, "RightPip": 4 }
+],
+"rules": [
+{ "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2"], "TargetValue": 10 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "B3", "B4"], "TargetValue": 10 },
+{ "Name": "Equal", "Type": "Equal", "Cells": ["C3", "D3"], "TargetValue": 0 },
+{ "Name": "Delta", "Type": "Delta", "Cells": ["E1", "E2"], "TargetValue": 1 }
+],
+"metaRules": [
+{ "type": "Sigma", "axis": "column", "index": "B", "value": 8 }
+]
+},
+"hard": {
+"grid": {
+"columns": ["A", "B", "C", "D", "E", "F"],
+"rowCount": 5,
+"playableCells": ["B1", "C1", "E1", "A2", "B2", "C2", "D2", "E2", "F2", "A3", "B3", "C3", "D3", "E3", "F3", "C4", "E4", "F4", "C5", "D5"]
+},
+"dominoes": [
+{ "LeftPip": 3, "RightPip": 3 },
+{ "LeftPip": 2, "RightPip": 6 },
+{ "LeftPip": 1, "RightPip": 4 },
+{ "LeftPip": 5, "RightPip": 3 },
+{ "LeftPip": 6, "RightPip": 4 },
+{ "LeftPip": 1, "RightPip": 1 },
+{ "LeftPip": 6, "RightPip": 5 },
+{ "LeftPip": 4, "RightPip": 3 },
+{ "LeftPip": 0, "RightPip": 2 },
+{ "LeftPip": 1, "RightPip": 6 }
+],
+"rules": [
+{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3"], "TargetValue": 11 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["B1", "B2", "B3"], "TargetValue": 12 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["C4", "C5", "D5"], "TargetValue": 8 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2", "C3"], "TargetValue": 10 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["D2", "E2", "D3", "E3"], "TargetValue": 15 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["F3", "F4"], "TargetValue": 1 }
+],
+"metaRules": [
+{ "type": "Sigma", "axis": "column", "index": "D", "value": 7 }
+]
+}
+},
+"2026-02-07": {
+"dayNumber": 7,
+"credits": {
+"easy": { "name": "KLIPSO" },
+"hard": { "name": "KLIPSO" }
+},
+"easy": {
+"grid": {
+"columns": ["A", "B", "C", "D"],
+"rowCount": 4,
+"playableCells": ["A1", "B1", "C1", "A2", "B2", "A3", "B3", "C3", "D3", "A4", "B4"]
+},
+"dominoes": [
+{ "LeftPip": 3, "RightPip": 1 },
+{ "LeftPip": 4, "RightPip": 0 },
+{ "LeftPip": 5, "RightPip": 2 },
+{ "LeftPip": 6, "RightPip": 6 },
+{ "LeftPip": 2, "RightPip": 2 }
+],
+"rules": [
+{ "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "B2"], "TargetValue": 6 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["B1", "C1"], "TargetValue": 12 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "C3", "D3"], "TargetValue": 9 }
+],
+"metaRules": [
+{ "type": "Even", "axis": "column", "index": "B", "value": 0 }
+]
+},
+"hard": {
+"grid": {
+"columns": ["A", "B", "C", "D", "E", "F"],
+"rowCount": 4,
+"playableCells": ["A1", "B1", "C1", "D1", "E1", "A2", "B2", "C2", "D2", "E2", "F2", "B3", "C3", "D3", "E3", "F3", "C4", "D4"]
+},
+"dominoes": [
+{ "LeftPip": 6, "RightPip": 4 },
+{ "LeftPip": 3, "RightPip": 0 },
+{ "LeftPip": 2, "RightPip": 2 },
+{ "LeftPip": 4, "RightPip": 5 },
+{ "LeftPip": 5, "RightPip": 1 },
+{ "LeftPip": 1, "RightPip": 1 },
+{ "LeftPip": 6, "RightPip": 3 },
+{ "LeftPip": 2, "RightPip": 5 },
+{ "LeftPip": 4, "RightPip": 4 }
+],
+"rules": [
+{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "B3"], "TargetValue": 10 },
+{ "Name": "Equal", "Type": "Equal", "Cells": ["C1", "D1"], "TargetValue": 0 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3", "C4", "D4"], "TargetValue": 10 },
+{ "Name": "LessThan", "Type": "LessThan", "Cells": ["D2", "E2", "F2"], "TargetValue": 10 },
+{ "Name": "Sum", "Type": "Sum", "Cells": ["D3", "E3", "F3"], "TargetValue": 12 }
+],
+"metaRules": [
+{ "type": "Even", "axis": "column", "index": "B", "value": 0 },
+{ "type": "Prime", "axis": "column", "index": "E", "value": 0 }
+]
+}
 }
 }
 }
