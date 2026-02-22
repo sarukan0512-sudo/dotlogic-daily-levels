@@ -1,415 +1,1316 @@
 {
-"version": 1,
-"month": "2026-02",
-"generatedAt": "2026-02-01T00:00:00Z",
-"levels": {
-"2026-02-01": {
-"dayNumber": 1,
-"credits": {
-"easy": { "name": "Vannesa" },
-"hard": { "name": "KLIPSO" }
-},
-"easy": {
-"grid": {
-"columns": ["A", "B", "C", "D", "E"],
-"rowCount": 4,
-"playableCells": ["A1", "B1", "C1", "D1", "E1", "A2", "B2", "C2", "E2", "A3", "C3", "C4"]
-},
-"dominoes": [
-{ "LeftPip": 2, "RightPip": 3 },
-{ "LeftPip": 4, "RightPip": 2 },
-{ "LeftPip": 1, "RightPip": 0 },
-{ "LeftPip": 6, "RightPip": 3 },
-{ "LeftPip": 5, "RightPip": 4 },
-{ "LeftPip": 2, "RightPip": 0 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1"], "TargetValue": 9 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "A3"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4"], "TargetValue": 5 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2"], "TargetValue": 8 }
-],
-"metaRules": [
-{ "type": "Sigma", "axis": "column", "index": "B", "value": 5 },
-{ "type": "Sigma", "axis": "column", "index": "C", "value": 5 }
-]
-},
-"hard": {
-"grid": {
-"columns": ["A", "B", "C", "D", "E"],
-"rowCount": 5,
-"playableCells": ["A1", "B1", "C1", "D1", "E1", "A2", "B2", "E2", "A3", "B3", "C3", "D3", "E3", "A4", "C4", "C5"]
-},
-"dominoes": [
-{ "LeftPip": 3, "RightPip": 3 },
-{ "LeftPip": 4, "RightPip": 0 },
-{ "LeftPip": 2, "RightPip": 6 },
-{ "LeftPip": 3, "RightPip": 1 },
-{ "LeftPip": 0, "RightPip": 2 },
-{ "LeftPip": 6, "RightPip": 1 },
-{ "LeftPip": 3, "RightPip": 3 },
-{ "LeftPip": 5, "RightPip": 5 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["B1", "A2", "B2"], "TargetValue": 15 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "A4"], "TargetValue": 9 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "C5"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2", "D3", "E3"], "TargetValue": 12 }
-],
-"metaRules": [
-{ "type": "Even", "axis": "column", "index": "C", "value": 0 }
-]
-}
-},
-"2026-02-02": {
-"dayNumber": 2,
-"credits": {
-"easy": { "name": "KLIPSO" },
-"hard": { "name": "Shaggy" }
-},
-"easy": {
-"grid": {
-"columns": ["A", "B", "C", "D"],
-"rowCount": 3,
-"playableCells": ["A1", "C1", "D1", "A2", "B2", "C2", "A3", "B3", "C3", "D3"]
-},
-"dominoes": [
-{ "LeftPip": 2, "RightPip": 2 },
-{ "LeftPip": 1, "RightPip": 4 },
-{ "LeftPip": 5, "RightPip": 6 },
-{ "LeftPip": 3, "RightPip": 2 },
-{ "LeftPip": 1, "RightPip": 5 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "A3", "B3"], "TargetValue": 15 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "C2", "C3", "D3"], "TargetValue": 10 }
-],
-"metaRules": [
-{ "type": "NotEqual", "axis": "column", "index": "C", "value": 0 }
-]
-},
-"hard": {
-"grid": {
-"columns": ["A", "B", "C", "D"],
-"rowCount": 5,
-"playableCells": ["A1", "B1", "C1", "A2", "B2", "D2", "B3", "C3", "D3", "A4", "B4", "C4", "B5", "C5"]
-},
-"dominoes": [
-{ "LeftPip": 2, "RightPip": 4 },
-{ "LeftPip": 0, "RightPip": 6 },
-{ "LeftPip": 5, "RightPip": 4 },
-{ "LeftPip": 2, "RightPip": 3 },
-{ "LeftPip": 3, "RightPip": 3 },
-{ "LeftPip": 1, "RightPip": 5 },
-{ "LeftPip": 6, "RightPip": 4 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "C1"], "TargetValue": 8 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2"], "TargetValue": 7 },
-{ "Name": "Delta", "Type": "Delta", "Cells": ["D2", "D3"], "TargetValue": 1 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["B3", "C3", "B4", "C4"], "TargetValue": 12 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["B5", "C5"], "TargetValue": 6 }
-],
-"metaRules": [
-{ "type": "Even", "axis": "row", "index": "4", "value": 0 }
-]
-}
-},
-"2026-02-03": {
-"dayNumber": 3,
-"credits": {
-"easy": { "name": "KLIPSO" },
-"hard": { "name": "KLIPSO" }
-},
-"easy": {
-"grid": {
-"columns": ["A", "B", "C", "D", "E"],
-"rowCount": 4,
-"playableCells": ["A1", "B1", "A2", "D2", "E2", "A3", "B3", "C3", "D3", "B4"]
-},
-"dominoes": [
-{ "LeftPip": 2, "RightPip": 2 },
-{ "LeftPip": 4, "RightPip": 1 },
-{ "LeftPip": 0, "RightPip": 6 },
-{ "LeftPip": 3, "RightPip": 5 },
-{ "LeftPip": 2, "RightPip": 4 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "A2"], "TargetValue": 7 },
-{ "Name": "Equal", "Type": "Equal", "Cells": ["B3", "B4", "C3"], "TargetValue": 0 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["D2", "E2", "D3"], "TargetValue": 12 }
-],
-"metaRules": [
-{ "type": "Even", "axis": "column", "index": "B", "value": 0 },
-{ "type": "Sigma", "axis": "column", "index": "D", "value": 9 }
-]
-},
-"hard": {
-"grid": {
-"columns": ["A", "B", "C", "D", "E"],
-"rowCount": 5,
-"playableCells": ["B1", "C1", "D1", "E1", "B2", "C2", "E2", "A3", "B3", "C3", "D3", "E3", "A4", "B4", "D4", "D5"]
-},
-"dominoes": [
-{ "LeftPip": 3, "RightPip": 2 },
-{ "LeftPip": 1, "RightPip": 4 },
-{ "LeftPip": 0, "RightPip": 3 },
-{ "LeftPip": 6, "RightPip": 3 },
-{ "LeftPip": 4, "RightPip": 2 },
-{ "LeftPip": 2, "RightPip": 2 },
-{ "LeftPip": 6, "RightPip": 1 },
-{ "LeftPip": 5, "RightPip": 3 }
-],
-"rules": [
-{ "Name": "Equal", "Type": "Equal", "Cells": ["C1", "D1"], "TargetValue": 0 },
-{ "Name": "Equal", "Type": "Equal", "Cells": ["B2", "C2", "B3", "C3"], "TargetValue": 0 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4", "B4"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["D3", "E3", "D4", "D5"], "TargetValue": 12 },
-{ "Name": "Delta", "Type": "Delta", "Cells": ["E1", "E2"], "TargetValue": 6 }
-],
-"metaRules": [
-{ "type": "Sigma", "axis": "row", "index": "2", "value": 10 },
-{ "type": "Prime", "axis": "column", "index": "B", "value": 0 }
-]
-}
-},
-"2026-02-04": {
-"dayNumber": 4,
-"credits": {
-"easy": { "name": "KLIPSO" },
-"hard": { "name": "KLIPSO" }
-},
-"easy": {
-"grid": {
-"columns": ["A", "B", "C", "D"],
-"rowCount": 4,
-"playableCells": ["A1", "B1", "C1", "D1", "A2", "B2", "D2", "A3", "B3", "A4"]
-},
-"dominoes": [
-{ "LeftPip": 3, "RightPip": 2 },
-{ "LeftPip": 4, "RightPip": 6 },
-{ "LeftPip": 0, "RightPip": 0 },
-{ "LeftPip": 3, "RightPip": 4 },
-{ "LeftPip": 5, "RightPip": 5 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1"], "TargetValue": 11 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2"], "TargetValue": 9 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "A4"], "TargetValue": 8 },
-{ "Name": "Delta", "Type": "Delta", "Cells": ["C1", "D1"], "TargetValue": 4 }
-],
-"metaRules": [
-{ "type": "Delta", "axis": "column", "index": "D", "value": 0 }
-]
-},
-"hard": {
-"grid": {
-"columns": ["A", "B", "C", "D", "E"],
-"rowCount": 5,
-"playableCells": ["C1", "A2", "B2", "C2", "E2", "A3", "B3", "C3", "D3", "E3", "A4", "B4", "C4", "D4", "E4", "C5"]
-},
-"dominoes": [
-{ "LeftPip": 3, "RightPip": 6 },
-{ "LeftPip": 4, "RightPip": 2 },
-{ "LeftPip": 1, "RightPip": 1 },
-{ "LeftPip": 6, "RightPip": 6 },
-{ "LeftPip": 5, "RightPip": 4 },
-{ "LeftPip": 2, "RightPip": 3 },
-{ "LeftPip": 0, "RightPip": 2 },
-{ "LeftPip": 4, "RightPip": 4 }
-],
-"rules": [
-{ "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["A2", "B2", "A3"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A4", "B4", "C4"], "TargetValue": 8 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2"], "TargetValue": 12 },
-{ "Name": "LessThan", "Type": "LessThan", "Cells": ["E2"], "TargetValue": 5 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C3", "D3", "D4"], "TargetValue": 11 },
-{ "Name": "Delta", "Type": "Delta", "Cells": ["E3", "E4"], "TargetValue": 4 }
-],
-"metaRules": [
-{ "type": "Sigma", "axis": "column", "index": "A", "value": 10 }
-]
-}
-},
-"2026-02-05": {
-"dayNumber": 5,
-"credits": {
-"easy": { "name": "KLIPSO" },
-"hard": { "name": "KLIPSO" }
-},
-"easy": {
-"grid": {
-"columns": ["A", "B", "C", "D"],
-"rowCount": 4,
-"playableCells": ["A1", "B1", "D1", "A2", "B2", "C2", "D2", "A3", "B3", "C3", "D3", "B4"]
-},
-"dominoes": [
-{ "LeftPip": 4, "RightPip": 0 },
-{ "LeftPip": 3, "RightPip": 6 },
-{ "LeftPip": 3, "RightPip": 3 },
-{ "LeftPip": 4, "RightPip": 2 },
-{ "LeftPip": 5, "RightPip": 5 },
-{ "LeftPip": 6, "RightPip": 4 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "B4"], "TargetValue": 10 },
-{ "Name": "Delta", "Type": "Delta", "Cells": ["B1", "B2"], "TargetValue": 1 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3"], "TargetValue": 9 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3"], "TargetValue": 7 }
-],
-"metaRules": [
-{ "type": "Even", "axis": "row", "index": "2", "value": 0 }
-]
-},
-"hard": {
-"grid": {
-"columns": ["A", "B", "C", "D", "E"],
-"rowCount": 4,
-"playableCells": ["A1", "B1", "C1", "D1", "E1", "B2", "C2", "D2", "E2", "A3", "B3", "C3", "D3", "E3", "A4", "C4", "D4", "E4"]
-},
-"dominoes": [
-{ "LeftPip": 3, "RightPip": 4 },
-{ "LeftPip": 0, "RightPip": 5 },
-{ "LeftPip": 4, "RightPip": 1 },
-{ "LeftPip": 2, "RightPip": 2 },
-{ "LeftPip": 2, "RightPip": 1 },
-{ "LeftPip": 4, "RightPip": 6 },
-{ "LeftPip": 1, "RightPip": 5 },
-{ "LeftPip": 0, "RightPip": 3 },
-{ "LeftPip": 3, "RightPip": 5 }
-],
-"rules": [
-{ "Name": "LessThan", "Type": "LessThan", "Cells": ["A1", "B1"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["B2", "C1", "C2"], "TargetValue": 9 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2", "E3", "E4"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "D4"], "TargetValue": 9 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C3", "B3", "C4"], "TargetValue": 10 },
-{ "Name": "Delta", "Type": "Delta", "Cells": ["A3", "A4"], "TargetValue": 3 }
-],
-"metaRules": [
-{ "type": "Prime", "axis": "row", "index": "2", "value": 0 }
-]
-}
-},
-"2026-02-06": {
-"dayNumber": 6,
-"credits": {
-"easy": { "name": "Vannesa" },
-"hard": { "name": "KLIPSO" }
-},
-"easy": {
-"grid": {
-"columns": ["A", "B", "C", "D", "E"],
-"rowCount": 4,
-"playableCells": ["C1", "D1", "E1", "A2", "B2", "C2", "E2", "B3", "C3", "D3", "E3", "B4"]
-},
-"dominoes": [
-{ "LeftPip": 5, "RightPip": 5 },
-{ "LeftPip": 3, "RightPip": 2 },
-{ "LeftPip": 6, "RightPip": 0 },
-{ "LeftPip": 1, "RightPip": 4 },
-{ "LeftPip": 5, "RightPip": 6 },
-{ "LeftPip": 4, "RightPip": 4 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "B3", "B4"], "TargetValue": 10 },
-{ "Name": "Equal", "Type": "Equal", "Cells": ["C3", "D3"], "TargetValue": 0 },
-{ "Name": "Delta", "Type": "Delta", "Cells": ["E1", "E2"], "TargetValue": 1 }
-],
-"metaRules": [
-{ "type": "Sigma", "axis": "column", "index": "B", "value": 8 }
-]
-},
-"hard": {
-"grid": {
-"columns": ["A", "B", "C", "D", "E", "F"],
-"rowCount": 5,
-"playableCells": ["B1", "C1", "E1", "A2", "B2", "C2", "D2", "E2", "F2", "A3", "B3", "C3", "D3", "E3", "F3", "C4", "E4", "F4", "C5", "D5"]
-},
-"dominoes": [
-{ "LeftPip": 3, "RightPip": 3 },
-{ "LeftPip": 2, "RightPip": 6 },
-{ "LeftPip": 1, "RightPip": 4 },
-{ "LeftPip": 5, "RightPip": 3 },
-{ "LeftPip": 6, "RightPip": 4 },
-{ "LeftPip": 1, "RightPip": 1 },
-{ "LeftPip": 6, "RightPip": 5 },
-{ "LeftPip": 4, "RightPip": 3 },
-{ "LeftPip": 0, "RightPip": 2 },
-{ "LeftPip": 1, "RightPip": 6 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3"], "TargetValue": 11 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["B1", "B2", "B3"], "TargetValue": 12 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C4", "C5", "D5"], "TargetValue": 8 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2", "C3"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["D2", "E2", "D3", "E3"], "TargetValue": 15 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["F3", "F4"], "TargetValue": 1 }
-],
-"metaRules": [
-{ "type": "Sigma", "axis": "column", "index": "D", "value": 7 }
-]
-}
-},
-"2026-02-07": {
-"dayNumber": 7,
-"credits": {
-"easy": { "name": "KLIPSO" },
-"hard": { "name": "KLIPSO" }
-},
-"easy": {
-"grid": {
-"columns": ["A", "B", "C", "D"],
-"rowCount": 4,
-"playableCells": ["A1", "B1", "C1", "A2", "B2", "A3", "B3", "C3", "D3", "A4", "B4"]
-},
-"dominoes": [
-{ "LeftPip": 3, "RightPip": 1 },
-{ "LeftPip": 4, "RightPip": 0 },
-{ "LeftPip": 5, "RightPip": 2 },
-{ "LeftPip": 6, "RightPip": 6 },
-{ "LeftPip": 2, "RightPip": 2 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "B2"], "TargetValue": 6 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["B1", "C1"], "TargetValue": 12 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "C3", "D3"], "TargetValue": 9 }
-],
-"metaRules": [
-{ "type": "Even", "axis": "column", "index": "B", "value": 0 }
-]
-},
-"hard": {
-"grid": {
-"columns": ["A", "B", "C", "D", "E", "F"],
-"rowCount": 4,
-"playableCells": ["A1", "B1", "C1", "D1", "E1", "A2", "B2", "C2", "D2", "E2", "F2", "B3", "C3", "D3", "E3", "F3", "C4", "D4"]
-},
-"dominoes": [
-{ "LeftPip": 6, "RightPip": 4 },
-{ "LeftPip": 3, "RightPip": 0 },
-{ "LeftPip": 2, "RightPip": 2 },
-{ "LeftPip": 4, "RightPip": 5 },
-{ "LeftPip": 5, "RightPip": 1 },
-{ "LeftPip": 1, "RightPip": 1 },
-{ "LeftPip": 6, "RightPip": 3 },
-{ "LeftPip": 2, "RightPip": 5 },
-{ "LeftPip": 4, "RightPip": 4 }
-],
-"rules": [
-{ "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "B3"], "TargetValue": 10 },
-{ "Name": "Equal", "Type": "Equal", "Cells": ["C1", "D1"], "TargetValue": 0 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3", "C4", "D4"], "TargetValue": 10 },
-{ "Name": "LessThan", "Type": "LessThan", "Cells": ["D2", "E2", "F2"], "TargetValue": 10 },
-{ "Name": "Sum", "Type": "Sum", "Cells": ["D3", "E3", "F3"], "TargetValue": 12 }
-],
-"metaRules": [
-{ "type": "Even", "axis": "column", "index": "B", "value": 0 },
-{ "type": "Prime", "axis": "column", "index": "E", "value": 0 }
-]
-}
-}
-}
+  "version": 1,
+  "month": "2026-02",
+  "generatedAt": "2026-02-01T00:00:00Z",
+  "levels": {
+    "2026-02-01": {
+      "dayNumber": 1,
+      "credits": { "easy": { "name": "Vannesa" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E"],
+          "rowCount": 4,
+          "playableCells": ["A1", "B1", "C1", "D1", "E1", "A2", "B2", "C2", "E2", "A3", "C3", "C4"]
+        },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 0 },
+          { "LeftPip": 6, "RightPip": 3 },
+          { "LeftPip": 5, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 0 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "A3"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4"], "TargetValue": 5 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2"], "TargetValue": 8 }
+        ],
+        "metaRules": [
+          { "type": "Sigma", "axis": "column", "index": "B", "value": 5 },
+          { "type": "Sigma", "axis": "column", "index": "C", "value": 5 }
+        ]
+      },
+      "hard": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E"],
+          "rowCount": 5,
+          "playableCells": ["A1", "B1", "C1", "D1", "E1", "A2", "B2", "E2", "A3", "B3", "C3", "D3", "E3", "A4", "C4", "C5"]
+        },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 0 },
+          { "LeftPip": 2, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 1 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 5, "RightPip": 5 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "A2", "B2"], "TargetValue": 15 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "A4"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "C5"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2", "D3", "E3"], "TargetValue": 12 }
+        ],
+        "metaRules": [{ "type": "Even", "axis": "column", "index": "C", "value": 0 }]
+      }
+    },
+
+    "2026-02-02": {
+      "dayNumber": 2,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "Shaggy" } },
+      "easy": {
+        "grid": {
+          "columns": ["A", "B", "C", "D"],
+          "rowCount": 3,
+          "playableCells": ["A1", "C1", "D1", "A2", "B2", "C2", "A3", "B3", "C3", "D3"]
+        },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 5 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "A3", "B3"], "TargetValue": 15 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "C2", "C3", "D3"], "TargetValue": 10 }
+        ],
+        "metaRules": [{ "type": "NotEqual", "axis": "column", "index": "C", "value": 0 }]
+      },
+      "hard": {
+        "grid": {
+          "columns": ["A", "B", "C", "D"],
+          "rowCount": 5,
+          "playableCells": ["A1", "B1", "C1", "A2", "B2", "D2", "B3", "C3", "D3", "A4", "B4", "C4", "B5", "C5"]
+        },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 4 },
+          { "LeftPip": 0, "RightPip": 6 },
+          { "LeftPip": 5, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 1, "RightPip": 5 },
+          { "LeftPip": 6, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "C1"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2"], "TargetValue": 7 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["D2", "D3"], "TargetValue": 1 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "C3", "B4", "C4"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B5", "C5"], "TargetValue": 6 }
+        ],
+        "metaRules": [{ "type": "Even", "axis": "row", "index": "4", "value": 0 }]
+      }
+    },
+
+    "2026-02-03": {
+      "dayNumber": 3,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E"],
+          "rowCount": 4,
+          "playableCells": ["A1", "B1", "A2", "D2", "E2", "A3", "B3", "C3", "D3", "B4"]
+        },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 5 },
+          { "LeftPip": 2, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "A2"], "TargetValue": 7 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B3", "B4", "C3"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "E2", "D3"], "TargetValue": 12 }
+        ],
+        "metaRules": [
+          { "type": "Even", "axis": "column", "index": "B", "value": 0 },
+          { "type": "Sigma", "axis": "column", "index": "D", "value": 9 }
+        ]
+      },
+      "hard": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E"],
+          "rowCount": 5,
+          "playableCells": ["B1", "C1", "D1", "E1", "B2", "C2", "E2", "A3", "B3", "C3", "D3", "E3", "A4", "B4", "D4", "D5"]
+        },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 4 },
+          { "LeftPip": 0, "RightPip": 3 },
+          { "LeftPip": 6, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 1 },
+          { "LeftPip": 5, "RightPip": 3 }
+        ],
+        "rules": [
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C1", "D1"], "TargetValue": 0 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B2", "C2", "B3", "C3"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4", "B4"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "E3", "D4", "D5"], "TargetValue": 12 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["E1", "E2"], "TargetValue": 6 }
+        ],
+        "metaRules": [
+          { "type": "Sigma", "axis": "row", "index": "2", "value": 10 },
+          { "type": "Prime", "axis": "column", "index": "B", "value": 0 }
+        ]
+      }
+    },
+
+    "2026-02-04": {
+      "dayNumber": 4,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": {
+          "columns": ["A", "B", "C", "D"],
+          "rowCount": 4,
+          "playableCells": ["A1", "B1", "C1", "D1", "A2", "B2", "D2", "A3", "B3", "A4"]
+        },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 6 },
+          { "LeftPip": 0, "RightPip": 0 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 5 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1"], "TargetValue": 11 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "A4"], "TargetValue": 8 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C1", "D1"], "TargetValue": 4 }
+        ],
+        "metaRules": [{ "type": "Delta", "axis": "column", "index": "D", "value": 0 }]
+      },
+      "hard": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E"],
+          "rowCount": 5,
+          "playableCells": ["C1", "A2", "B2", "C2", "E2", "A3", "B3", "C3", "D3", "E3", "A4", "B4", "C4", "D4", "E4", "C5"]
+        },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 6 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 6, "RightPip": 6 },
+          { "LeftPip": 5, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 0, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["A2", "B2", "A3"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "B4", "C4"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2"], "TargetValue": 12 },
+          { "Name": "LessThan", "Type": "LessThan", "Cells": ["E2"], "TargetValue": 5 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "D3", "D4"], "TargetValue": 11 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["E3", "E4"], "TargetValue": 4 }
+        ],
+        "metaRules": [{ "type": "Sigma", "axis": "column", "index": "A", "value": 10 }]
+      }
+    },
+
+    "2026-02-05": {
+      "dayNumber": 5,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": {
+          "columns": ["A", "B", "C", "D"],
+          "rowCount": 4,
+          "playableCells": ["A1", "B1", "D1", "A2", "B2", "C2", "D2", "A3", "B3", "C3", "D3", "B4"]
+        },
+        "dominoes": [
+          { "LeftPip": 4, "RightPip": 0 },
+          { "LeftPip": 3, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 5, "RightPip": 5 },
+          { "LeftPip": 6, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "B4"], "TargetValue": 10 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["B1", "B2"], "TargetValue": 1 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3"], "TargetValue": 7 }
+        ],
+        "metaRules": [{ "type": "Even", "axis": "row", "index": "2", "value": 0 }]
+      },
+      "hard": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E"],
+          "rowCount": 4,
+          "playableCells": ["A1", "B1", "C1", "D1", "E1", "B2", "C2", "D2", "E2", "A3", "B3", "C3", "D3", "E3", "A4", "C4", "D4", "E4"]
+        },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 0, "RightPip": 5 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 4, "RightPip": 6 },
+          { "LeftPip": 1, "RightPip": 5 },
+          { "LeftPip": 0, "RightPip": 3 },
+          { "LeftPip": 3, "RightPip": 5 }
+        ],
+        "rules": [
+          { "Name": "LessThan", "Type": "LessThan", "Cells": ["A1", "B1"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "C1", "C2"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2", "E3", "E4"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "D4"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "B3", "C4"], "TargetValue": 10 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["A3", "A4"], "TargetValue": 3 }
+        ],
+        "metaRules": [{ "type": "Prime", "axis": "row", "index": "2", "value": 0 }]
+      }
+    },
+
+    "2026-02-06": {
+      "dayNumber": 6,
+      "credits": { "easy": { "name": "Vannesa" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E"],
+          "rowCount": 4,
+          "playableCells": ["C1", "D1", "E1", "A2", "B2", "C2", "E2", "B3", "C3", "D3", "E3", "B4"]
+        },
+        "dominoes": [
+          { "LeftPip": 5, "RightPip": 5 },
+          { "LeftPip": 3, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 0 },
+          { "LeftPip": 1, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 4, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "B3", "B4"], "TargetValue": 10 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C3", "D3"], "TargetValue": 0 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["E1", "E2"], "TargetValue": 1 }
+        ],
+        "metaRules": [{ "type": "Sigma", "axis": "column", "index": "B", "value": 8 }]
+      },
+      "hard": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E", "F"],
+          "rowCount": 5,
+          "playableCells": ["B1", "C1", "E1", "A2", "B2", "C2", "D2", "E2", "F2", "A3", "B3", "C3", "D3", "E3", "F3", "C4", "E4", "F4", "C5", "D5"]
+        },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 6 },
+          { "LeftPip": 1, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 3 },
+          { "LeftPip": 6, "RightPip": 4 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 6, "RightPip": 5 },
+          { "LeftPip": 4, "RightPip": 3 },
+          { "LeftPip": 0, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 6 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3"], "TargetValue": 11 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "B2", "B3"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "C5", "D5"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2", "C3"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "E2", "D3", "E3"], "TargetValue": 15 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["F3", "F4"], "TargetValue": 1 }
+        ],
+        "metaRules": [{ "type": "Sigma", "axis": "column", "index": "D", "value": 7 }]
+      }
+    },
+
+    "2026-02-07": {
+      "dayNumber": 7,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": {
+          "columns": ["A", "B", "C", "D"],
+          "rowCount": 4,
+          "playableCells": ["A1", "B1", "C1", "A2", "B2", "A3", "B3", "C3", "D3", "A4", "B4"]
+        },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 4, "RightPip": 0 },
+          { "LeftPip": 5, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 6 },
+          { "LeftPip": 2, "RightPip": 2 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "B2"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "C1"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "C3", "D3"], "TargetValue": 9 }
+        ],
+        "metaRules": [{ "type": "Even", "axis": "column", "index": "B", "value": 0 }]
+      },
+      "hard": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E", "F"],
+          "rowCount": 4,
+          "playableCells": ["A1", "B1", "C1", "D1", "E1", "A2", "B2", "C2", "D2", "E2", "F2", "B3", "C3", "D3", "E3", "F3", "C4", "D4"]
+        },
+        "dominoes": [
+          { "LeftPip": 6, "RightPip": 4 },
+          { "LeftPip": 3, "RightPip": 0 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 5 },
+          { "LeftPip": 5, "RightPip": 1 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 6, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 5 },
+          { "LeftPip": 4, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "B3"], "TargetValue": 10 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C1", "D1"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3", "C4", "D4"], "TargetValue": 10 },
+          { "Name": "LessThan", "Type": "LessThan", "Cells": ["D2", "E2", "F2"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "E3", "F3"], "TargetValue": 12 }
+        ],
+        "metaRules": [
+          { "type": "Even", "axis": "column", "index": "B", "value": 0 },
+          { "type": "Prime", "axis": "column", "index": "E", "value": 0 }
+        ]
+      }
+    },
+
+    "2026-02-08": {
+      "dayNumber": 8,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C"], "rowCount": 5, "playableCells": ["C1", "A2", "B2", "C2", "A3", "C3", "A4", "C4", "B5", "C5"] },
+        "dominoes": [
+          { "LeftPip": 4, "RightPip": 6 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 3 },
+          { "LeftPip": 0, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "A3"], "TargetValue": 4 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C2", "C3"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "C5", "B5"], "TargetValue": 6 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": {
+          "columns": ["A", "B", "C", "D", "E", "F"],
+          "rowCount": 2,
+          "playableCells": ["A1", "C1", "D1", "E1", "F1", "A2", "B2", "C2", "D2", "E2", "F2", "G2", "B3", "C3", "D3", "E3", "B4", "C4", "D4", "E4", "G2"]
+        },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 6 },
+          { "LeftPip": 5, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 2 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 1 },
+          { "LeftPip": 4, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "B2"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "E1"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E2", "E3", "E4"], "TargetValue": 12 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["F1", "F2"], "TargetValue": 3 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "D4"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4"], "TargetValue": 8 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-09": {
+      "dayNumber": 9,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 4, "playableCells": ["A1", "B1", "C1", "D1", "A2", "C2", "A3", "C3", "D3", "D4"] },
+        "dominoes": [
+          { "LeftPip": 5, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 0 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 1, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "A2", "A3"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "C2"], "TargetValue": 8 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C3", "D3"], "TargetValue": 3 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 6, "playableCells": ["A1", "B1", "C1", "D1", "A2", "B2", "C2", "D2", "A3", "B3", "C3", "D3", "A4", "B4", "C4", "D4", "A5", "B5", "C5", "A6"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 6, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 5 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 0, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1"], "TargetValue": 10 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C1", "D1", "C2"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "C3"], "TargetValue": 7 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "B3", "B4", "C4"], "TargetValue": 10 },
+          { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["A2", "A3", "A4"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A5", "B5", "A6"], "TargetValue": 12 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-10": {
+      "dayNumber": 10,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 4, "playableCells": ["A1", "C1", "D1", "A2", "B2", "C2", "B3", "C3", "D3", "B4"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 0 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 6, "RightPip": 3 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "B2"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "C2"], "TargetValue": 7 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["B3", "C3"], "TargetValue": 2 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 4, "playableCells": ["B1", "B2", "B3", "B4", "A4", "D2", "D3", "E3", "C3", "C4", "D4", "E4"] },
+        "dominoes": [],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "B2", "B3", "B4", "A4"], "TargetValue": 20 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "E3"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "D4", "E4"], "TargetValue": 10 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-11": {
+      "dayNumber": 11,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 4, "playableCells": ["A1", "B1", "A2", "B2", "C2", "D2", "A3", "B3", "C3", "A4", "B4", "C4"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 5 },
+          { "LeftPip": 6, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 6, "RightPip": 2 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "B2"], "TargetValue": 9 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["A2", "A3", "A4"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C2"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "B4", "C4"], "TargetValue": 8 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 5, "playableCells": ["A1", "B1", "C1", "E1", "A2", "C2", "D2", "E2", "A3", "B3", "C3", "D3", "E3", "B4", "C4", "D4", "E4", "B5"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 6, "RightPip": 6 },
+          { "LeftPip": 5, "RightPip": 3 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 2 }
+        ],
+        "rules": [
+          { "Name": "Equal", "Type": "Equal", "Cells": ["A1", "B1", "C1"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3", "D3"], "TargetValue": 5 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E1", "D2", "E2"], "TargetValue": 10 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["E3", "E4", "D4"], "TargetValue": 0 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B4", "C4", "B5"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3", "B3"], "TargetValue": 8 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-12": {
+      "dayNumber": 12,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 4, "playableCells": ["B1", "B2", "C2", "D2", "E2", "A3", "B3", "C3", "E3", "E4"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 0 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "C3"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "D2", "E2", "E3", "E4"], "TargetValue": 11 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 4, "playableCells": ["A1", "C1", "D1", "E1", "F1", "A2", "B2", "C2", "F2", "A3", "B3", "C3", "D3", "F3", "A4", "B4", "C4", "D4", "E4", "F4"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 6 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 5, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 6 },
+          { "LeftPip": 5, "RightPip": 1 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 0, "RightPip": 0 },
+          { "LeftPip": 1, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "A3", "A4"], "TargetValue": 15 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "F1"], "TargetValue": 5 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["F2", "F3", "F4"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "D3", "C4", "D4"], "TargetValue": 10 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-13": {
+      "dayNumber": 13,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 3, "playableCells": ["A1", "B1", "A2", "B2", "C2", "D2", "E2", "C3", "D3", "E3"] },
+        "dominoes": [
+          { "LeftPip": 0, "RightPip": 0 },
+          { "LeftPip": 2, "RightPip": 4 },
+          { "LeftPip": 6, "RightPip": 0 },
+          { "LeftPip": 3, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 2 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "A2"], "TargetValue": 10 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B2", "C2", "C3"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "E3"], "TargetValue": 8 },
+          { "Name": "LessThan", "Type": "LessThan", "Cells": ["E2"], "TargetValue": 4 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 6, "playableCells": ["A1", "D1", "E1", "A2", "B2", "D2", "E2", "B3", "D3", "E3", "D4", "E4", "B5", "C5", "D5", "B6", "C6", "D6"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 5 },
+          { "LeftPip": 6, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 4 },
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 6, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 0 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 5, "RightPip": 5 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "E2"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "E3"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D4", "E4", "D5"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B5", "B6", "C6"], "TargetValue": 10 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-14": {
+      "dayNumber": 14,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C"], "rowCount": 5, "playableCells": ["A1", "B1", "B2", "C2", "A3", "B3", "A4", "B4", "C4", "C5"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 6, "RightPip": 1 },
+          { "LeftPip": 3, "RightPip": 0 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "B3", "A3"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "B4", "C4"], "TargetValue": 10 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 6, "playableCells": ["B1", "C1", "D1", "A2", "B2", "D2", "E2", "A3", "B3", "C3", "E3", "C4", "D4", "E4", "A5", "C5", "D5", "A6"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 0 },
+          { "LeftPip": 6, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 5 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 6, "RightPip": 5 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "B2", "A2"], "TargetValue": 11 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C1", "D1"], "TargetValue": 1 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E2", "E3", "E4"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "D4"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3"], "TargetValue": 8 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-15": {
+      "dayNumber": 15,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 3, "playableCells": ["A1", "B1", "A2", "B2", "C2", "A3", "B3", "C3", "D3", "E3"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 6, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "B2"], "TargetValue": 13 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3", "B3"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3", "D3", "E3"], "TargetValue": 12 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 5, "playableCells": ["C1", "D1", "E1", "F1", "D2", "F2", "A3", "B3", "C3", "D3", "F3", "A4", "C4", "D4", "F4", "A5", "B5", "D5", "E5", "F5"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 4 },
+          { "LeftPip": 6, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 4, "RightPip": 5 },
+          { "LeftPip": 5, "RightPip": 5 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 6, "RightPip": 3 },
+          { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 2, "RightPip": 0 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "E1"], "TargetValue": 7 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["F3", "F4"], "TargetValue": 8 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["F1", "F2"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D5", "E5", "F5"], "TargetValue": 11 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "C3"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "D4"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "A5", "B5"], "TargetValue": 14 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-16": {
+      "dayNumber": 16,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 3, "playableCells": ["A1", "A2", "B2", "C2", "D2", "B3", "E3", "F3"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 6, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "B2", "B3"], "TargetValue": 12 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["E3", "F3"], "TargetValue": 0 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 5, "playableCells": ["A1", "C1", "D1", "A2", "B2", "C2", "D2", "E2", "A3", "B3", "C3", "D3", "E3", "C4", "B4", "B5", "C5", "D5", "E5"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 6 },
+          { "LeftPip": 5, "RightPip": 1 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 6, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 5 },
+          { "LeftPip": 3, "RightPip": 5 },
+          { "LeftPip": 4, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "A3"], "TargetValue": 11 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["B2", "B3"], "TargetValue": 3 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C1", "C2", "C3", "D1"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "E2", "E3"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B4", "C4", "C5"], "TargetValue": 9 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["D5", "E5"], "TargetValue": 2 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-17": {
+      "dayNumber": 17,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 5, "playableCells": ["B1", "C1", "B2", "D2", "E2", "A3", "B3", "C3", "D3", "A4", "A5"] },
+        "dominoes": [
+          { "LeftPip": 5, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 0, "RightPip": 3 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "C1", "B2"], "TargetValue": 4 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["A3", "A4"], "TargetValue": 2 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "C3"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "E2"], "TargetValue": 8 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 6, "playableCells": ["C1", "D1", "E1", "C2", "D2", "B3", "C3", "D3", "E3", "F3", "A4", "B4", "E4", "B5", "C5", "D5", "E5", "B6", "D6", "E6"] },
+        "dominoes": [
+          { "LeftPip": 6, "RightPip": 4 },
+          { "LeftPip": 0, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 3 },
+          { "LeftPip": 0, "RightPip": 1 },
+          { "LeftPip": 1, "RightPip": 5 },
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 5, "RightPip": 5 }
+        ],
+        "rules": [
+          { "Name": "Equal", "Type": "Equal", "Cells": ["D1", "E1", "D2"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3", "D3"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E3", "F3", "E4"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E5", "E6"], "TargetValue": 2 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "B4"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C5", "D5"], "TargetValue": 10 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-18": {
+      "dayNumber": 18,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F", "G"], "rowCount": 4, "playableCells": ["A1", "C1", "E1", "G1", "A2", "C2", "E2", "G2", "D3", "A4", "B4", "D4", "F4", "G4"] },
+        "dominoes": [
+          { "LeftPip": 6, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 5 },
+          { "LeftPip": 3, "RightPip": 5 },
+          { "LeftPip": 6, "RightPip": 0 },
+          { "LeftPip": 4, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 6 },
+          { "LeftPip": 5, "RightPip": 0 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2"], "TargetValue": 6 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C1", "C2"], "TargetValue": 4 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "B4"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "D4"], "TargetValue": 10 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["E1", "E2"], "TargetValue": 1 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["G1", "G2"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["F4", "G4"], "TargetValue": 8 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 4, "playableCells": ["B1", "C1", "D1", "F1", "A2", "B2", "C2", "D2", "F2", "A3", "C3", "F3", "A4", "B4", "C4", "D4", "E4", "F4"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 5 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 0 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 5, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "B2", "A2"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2"], "TargetValue": 4 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["F1", "F2"], "TargetValue": 2 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "D2"], "TargetValue": 3 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["F3", "F4", "E4"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "D4"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4", "B4"], "TargetValue": 9 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-19": {
+      "dayNumber": 19,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 5, "playableCells": ["C1", "D1", "B2", "C2", "A3", "B3", "A4", "B4", "B5", "C5"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 1, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "C2"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "B3", "A3", "A4"], "TargetValue": 4 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B4", "B5"], "TargetValue": 8 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 6, "playableCells": ["C1", "A2", "B2", "C2", "D2", "A3", "C3", "D3", "A4", "C4", "D4", "E4", "B5", "C5", "E5", "C6", "D6", "E6", "A1"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 6 },
+          { "LeftPip": 5, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 1, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 5, "RightPip": 3 },
+          { "LeftPip": 6, "RightPip": 2 },
+          { "LeftPip": 0, "RightPip": 0 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "A1", "A2"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "D2", "D3"], "TargetValue": 7 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3", "A4"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "D4", "E4", "E5", "E6"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C5", "D6", "C6"], "TargetValue": 8 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-20": {
+      "dayNumber": 20,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 4, "playableCells": ["C1", "C2", "D2", "A3", "D3", "A4", "C4", "D4"] },
+        "dominoes": [
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 4 },
+          { "LeftPip": 3, "RightPip": 2 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "C2", "D2"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "D4"], "TargetValue": 7 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4"], "TargetValue": 4 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 5, "playableCells": ["D1", "E1", "F1", "C2", "D2", "E2", "F2", "A3", "B3", "C3", "E3", "B4", "C4", "E4", "B5", "C5"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 6, "RightPip": 1 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 6 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B5", "C5"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "C2", "C3", "C4"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "D2", "E2"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E1", "F1", "F2"], "TargetValue": 6 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["E3", "E4"], "TargetValue": 4 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-21": {
+      "dayNumber": 21,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 4, "playableCells": ["A1", "B1", "C1", "F1", "B2", "C2", "F2", "B3", "E3", "F3", "D4", "E4"] },
+        "dominoes": [
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 3, "RightPip": 5 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 0 },
+          { "LeftPip": 1, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "C1", "B2", "B3"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["F1", "F2", "F3"], "TargetValue": 7 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E3", "D4", "E4"], "TargetValue": 9 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F", "G"], "rowCount": 6, "playableCells": ["D1", "E1", "G1", "D2", "G2", "B3", "C3", "D3", "F3", "G3", "A4", "B4", "F4", "D5", "E5", "F5", "C6", "D6"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 0 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 5 },
+          { "LeftPip": 6, "RightPip": 0 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 4, "RightPip": 5 },
+          { "LeftPip": 5, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 3 },
+          { "LeftPip": 0, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1"], "TargetValue": 7 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["D2", "D3"], "TargetValue": 3 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "B4", "A4"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["F3", "F4", "G3"], "TargetValue": 8 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["E5", "F5"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D5", "C6", "D6"], "TargetValue": 10 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-22": {
+      "dayNumber": 22,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 4, "playableCells": ["A1", "C1", "A2", "B2", "C2", "D2", "B3", "D3", "C4", "D4"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 3 },
+          { "LeftPip": 5, "RightPip": 5 }
+        ],
+        "rules": [
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C1", "C2"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "D4"], "TargetValue": 7 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["A2", "B2", "B3"], "TargetValue": 0 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 5, "playableCells": ["B1", "C1", "A2", "B2", "C2", "D2", "A3", "B3", "C3", "D3", "E3", "A4", "B4", "D4", "E4", "B5", "C5", "D5"] },
+        "dominoes": [
+          { "LeftPip": 1, "RightPip": 6 },
+          { "LeftPip": 0, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 5 },
+          { "LeftPip": 0, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B1", "B2", "A2"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "A4"], "TargetValue": 5 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B4", "B5"], "TargetValue": 8 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C5", "D5"], "TargetValue": 3 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D4", "E4"], "TargetValue": 10 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C2", "D2", "C3", "D3"], "TargetValue": 0 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-23": {
+      "dayNumber": 23,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 4, "playableCells": ["B1", "C1", "D1", "A2", "D2", "A3", "B3", "C3", "D3", "E3", "B4", "C4"] },
+        "dominoes": [
+          { "LeftPip": 6, "RightPip": 6 },
+          { "LeftPip": 5, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 4, "RightPip": 0 },
+          { "LeftPip": 5, "RightPip": 1 },
+          { "LeftPip": 4, "RightPip": 4 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "D3"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "B4"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1"], "TargetValue": 5 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "D2"], "TargetValue": 9 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 4, "playableCells": ["A1", "B1", "C1", "D1", "E1", "F1", "B2", "C2", "D2", "E2", "A3", "B3", "C3", "D3", "E3", "F3", "B4", "C4"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 5 },
+          { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 6, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 5, "RightPip": 6 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "B2"], "TargetValue": 10 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C1", "D1"], "TargetValue": 1 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E1", "F1", "E2"], "TargetValue": 9 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "B4"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3", "C4"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D3", "E3", "F3"], "TargetValue": 7 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-24": {
+      "dayNumber": 24,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 4, "playableCells": ["B1", "C1", "D1", "D2", "E2", "A3", "B3", "C3", "E3", "C4", "D4"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 4 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 1 },
+          { "LeftPip": 5, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "C1", "D1"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "C3", "D4"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "E2", "E3"], "TargetValue": 5 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 5, "playableCells": ["A1", "B1", "C1", "E1", "B2", "C2", "D2", "E2", "B3", "D3", "A4", "B4", "C4", "A5", "C5", "D5"] },
+        "dominoes": [
+          { "LeftPip": 6, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 1 }
+        ],
+        "rules": [
+          { "Name": "Equal", "Type": "Equal", "Cells": ["A1", "B1", "B2"], "TargetValue": 0 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C1", "C2"], "TargetValue": 2 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["E1", "E2", "D2", "D3"], "TargetValue": 0 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B3", "B4", "C4"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "A5"], "TargetValue": 3 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E1", "E2", "D2", "D3"], "TargetValue": 12 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C5", "D5"], "TargetValue": 5 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-25": {
+      "dayNumber": 25,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 5, "playableCells": ["B1", "C1", "B2", "A3", "B3", "D3", "A4", "B4", "C4", "D4", "C5", "D5"] },
+        "dominoes": [
+          { "LeftPip": 6, "RightPip": 4 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 4 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 4, "RightPip": 0 },
+          { "LeftPip": 3, "RightPip": 6 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "C1"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3"], "TargetValue": 5 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["A4", "B4"], "TargetValue": 5 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "C5"], "TargetValue": 7 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "D4", "D5"], "TargetValue": 8 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 5, "playableCells": ["A1", "B1", "C1", "D1", "C2", "D2", "E2", "F2", "A3", "B3", "C3", "D3", "F3", "B4", "C4", "D4", "C5", "D5"] },
+        "dominoes": [
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 5, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 0 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 3 },
+          { "LeftPip": 1, "RightPip": 0 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "C1"], "TargetValue": 9 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["F2", "F3"], "TargetValue": 1 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C2", "D2", "E2"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "B4"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "D3", "D4", "D5"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "C5"], "TargetValue": 4 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-26": {
+      "dayNumber": 26,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 2, "playableCells": ["A1", "B1", "C1", "D1", "E1", "F1", "B2", "C2", "D2", "B3"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 5, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 0 },
+          { "LeftPip": 1, "RightPip": 3 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "B1", "C1"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "D2", "E1"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "B3", "C2"], "TargetValue": 6 },
+          { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["F1"], "TargetValue": 4 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 5, "playableCells": ["A1", "B1", "D1", "E1", "A2", "B2", "C2", "D2", "A3", "B3", "C3", "D3", "E3", "F3", "B4", "C4", "D4", "A5", "B5", "D5"] },
+        "dominoes": [
+          { "LeftPip": 6, "RightPip": 3 },
+          { "LeftPip": 2, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 0, "RightPip": 6 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 4, "RightPip": 6 },
+          { "LeftPip": 0, "RightPip": 0 }
+        ],
+        "rules": [
+          { "Name": "Equal", "Type": "Equal", "Cells": ["A1", "B1", "A2"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "B4", "B5"], "TargetValue": 14 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["C2", "D2", "D3"], "TargetValue": 0 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["D4", "D5"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E3", "F3"], "TargetValue": 0 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-27": {
+      "dayNumber": 27,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 6, "playableCells": ["B1", "C1", "A2", "B2", "C2", "A3", "A4", "A5", "B5", "C5", "B6", "C6", "D6"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 0 },
+          { "LeftPip": 0, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 1 },
+          { "LeftPip": 3, "RightPip": 3 }
+        ],
+        "rules": [
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B1", "C1", "B2"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A5", "B5", "C5", "B6", "D6"], "TargetValue": 10 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 6, "playableCells": ["B1", "B2", "C2", "D2", "E2", "A3", "B3", "C3", "E3", "A4", "C4", "F4", "A5", "B5", "C5", "D5", "E5", "F5", "C6", "D6"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 2 },
+          { "LeftPip": 0, "RightPip": 6 },
+          { "LeftPip": 4, "RightPip": 5 },
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 2 },
+          { "LeftPip": 6, "RightPip": 4 },
+          { "LeftPip": 0, "RightPip": 0 },
+          { "LeftPip": 1, "RightPip": 2 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "C2", "D2", "E2", "E3"], "TargetValue": 6 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3", "C3"], "TargetValue": 10 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["C6", "D6"], "TargetValue": 2 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "A5", "B5"], "TargetValue": 12 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "C5", "D5"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["F4", "E5", "F5"], "TargetValue": 9 }
+        ],
+        "metaRules": []
+      }
+    },
+
+    "2026-02-28": {
+      "dayNumber": 28,
+      "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
+      "easy": {
+        "grid": { "columns": ["A", "B", "C", "D"], "rowCount": 6, "playableCells": ["B1", "A2", "B2", "D2", "A3", "B3", "C3", "D3", "C4", "D4", "A6", "B6"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 5, "RightPip": 2 },
+          { "LeftPip": 3, "RightPip": 2 },
+          { "LeftPip": 1, "RightPip": 2 },
+          { "LeftPip": 0, "RightPip": 2 }
+        ],
+        "rules": [
+          { "Name": "Equal", "Type": "Equal", "Cells": ["A2", "B1", "B2", "A3"], "TargetValue": 0 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["B3", "C3", "D3"], "TargetValue": 0 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["A6", "B6"], "TargetValue": 3 }
+        ],
+        "metaRules": []
+      },
+      "hard": {
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 7, "playableCells": ["C1", "D1", "B2", "C2", "D2", "A3", "B3", "C3", "D3", "E3", "C4", "D4", "E4", "A5", "B5", "C5", "D5", "E5", "A6", "B6", "C6", "E6", "D7", "E7"] },
+        "dominoes": [
+          { "LeftPip": 3, "RightPip": 4 },
+          { "LeftPip": 5, "RightPip": 6 },
+          { "LeftPip": 6, "RightPip": 0 },
+          { "LeftPip": 1, "RightPip": 1 },
+          { "LeftPip": 2, "RightPip": 3 },
+          { "LeftPip": 4, "RightPip": 1 },
+          { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 2, "RightPip": 1 },
+          { "LeftPip": 3, "RightPip": 3 },
+          { "LeftPip": 6, "RightPip": 6 },
+          { "LeftPip": 1, "RightPip": 5 },
+          { "LeftPip": 0, "RightPip": 2 }
+        ],
+        "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "D2", "D3"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "C2", "C3"], "TargetValue": 10 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["A3", "B3"], "TargetValue": 2 },
+          { "Name": "Equal", "Type": "Equal", "Cells": ["A6", "B6", "C6"], "TargetValue": 0 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E6", "D7", "E7"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D5", "E5"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["E3", "D4", "E4"], "TargetValue": 8 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "B5", "C5"], "TargetValue": 6 }
+        ],
+        "metaRules": []
+      }
+    }
+  }
 }
