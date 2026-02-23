@@ -330,7 +330,7 @@
         "grid": {
           "columns": ["A", "B", "C", "D"],
           "rowCount": 4,
-          "playableCells": ["A1", "B1", "C1", "A2", "B2", "A3", "B3", "C3", "D3", "A4", "B4"]
+          "playableCells": ["A1", "B1", "C1", "A2", "B2", "A3", "B3", "C3", "D3", "A4"]
         },
         "dominoes": [
           { "LeftPip": 3, "RightPip": 1 },
