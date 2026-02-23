@@ -589,6 +589,7 @@
           { "LeftPip": 1, "RightPip": 1 }
         ],
         "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "C2", "B3", "B4"], "TargetValue": 4 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2", "A3", "A4"], "TargetValue": 15 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["D1", "E1", "F1"], "TargetValue": 5 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["F2", "F3", "F4"], "TargetValue": 10 },
