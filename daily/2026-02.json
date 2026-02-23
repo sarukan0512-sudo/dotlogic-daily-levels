@@ -840,7 +840,7 @@
           { "Name": "Sum", "Type": "Sum", "Cells": ["A1", "A2"], "TargetValue": 6 },
           { "Name": "Delta", "Type": "Delta", "Cells": ["C1", "C2"], "TargetValue": 4 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "B4"], "TargetValue": 6 },
-          { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "D4"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["D3", "D4"], "TargetValue": 5 },
           { "Name": "Delta", "Type": "Delta", "Cells": ["E1", "E2"], "TargetValue": 1 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["G1", "G2"], "TargetValue": 10 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["F4", "G4"], "TargetValue": 8 }
