@@ -881,7 +881,7 @@
         "dominoes": [
           { "LeftPip": 2, "RightPip": 2 },
           { "LeftPip": 3, "RightPip": 1 },
-          { "LeftPip": 0, "RightPip": 4 },
+          { "LeftPip": 1, "RightPip": 4 },
           { "LeftPip": 5, "RightPip": 6 },
           { "LeftPip": 1, "RightPip": 1 }
         ],
