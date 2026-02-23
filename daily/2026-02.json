@@ -675,6 +675,8 @@
           { "LeftPip": 6, "RightPip": 5 }
         ],
         "rules": [
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C5", "D5"], "TargetValue": 10 },
+          { "Name": "Delta", "Type": "Delta", "Cells": ["A5", "A6"], "TargetValue": 2 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "B2", "A2"], "TargetValue": 11 },
           { "Name": "Delta", "Type": "Delta", "Cells": ["C1", "D1"], "TargetValue": 1 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["E2", "E3", "E4"], "TargetValue": 9 },
