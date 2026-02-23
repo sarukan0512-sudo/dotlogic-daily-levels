@@ -893,7 +893,7 @@
         "metaRules": []
       },
       "hard": {
-        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 6, "playableCells": ["C1", "A2", "B2", "C2", "D2", "A3", "C3", "D3", "A4", "C4", "D4", "E4", "B5", "C5", "E5", "C6", "D6", "E6", "A1"] },
+        "grid": { "columns": ["A", "B", "C", "D", "E"], "rowCount": 6, "playableCells": ["C1", "A2", "B2", "C2", "D2", "A3", "C3", "D3", "A4", "C4", "D4", "E4", "B5", "C5", "E5", "C6", "D6", "E6",] },
         "dominoes": [
           { "LeftPip": 3, "RightPip": 1 },
           { "LeftPip": 0, "RightPip": 6 },
@@ -906,7 +906,7 @@
           { "LeftPip": 0, "RightPip": 0 }
         ],
         "rules": [
-          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "A1", "A2"], "TargetValue": 10 },
+          { "Name": "Sum", "Type": "Sum", "Cells": ["B2", "C1", "C2"], "TargetValue": 10 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "D2", "D3"], "TargetValue": 7 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["A2", "A3", "A4"], "TargetValue": 8 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "D4", "E4", "E5", "E6"], "TargetValue": 12 },
