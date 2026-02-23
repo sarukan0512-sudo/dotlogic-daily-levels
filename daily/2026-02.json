@@ -419,8 +419,7 @@
           { "Name": "Sum", "Type": "Sum", "Cells": ["C1", "D1", "E1"], "TargetValue": 12 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["E2", "E3", "E4"], "TargetValue": 12 },
           { "Name": "Delta", "Type": "Delta", "Cells": ["F1", "F2"], "TargetValue": 3 },
-          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "D4"], "TargetValue": 9 },
-          { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A4"], "TargetValue": 8 }
+          { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "C4", "D4"], "TargetValue": 9 }
         ],
         "metaRules": []
       }
