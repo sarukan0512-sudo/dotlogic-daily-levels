@@ -1064,6 +1064,7 @@
           { "LeftPip": 1, "RightPip": 1 },
           { "LeftPip": 2, "RightPip": 5 },
           { "LeftPip": 5, "RightPip": 0 },
+          { "LeftPip": 0, "RightPip": 4 },
           { "LeftPip": 6, "RightPip": 3 },
           { "LeftPip": 2, "RightPip": 2 },
           { "LeftPip": 5, "RightPip": 6 }
