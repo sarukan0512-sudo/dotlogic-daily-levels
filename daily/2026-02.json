@@ -608,7 +608,6 @@
           { "LeftPip": 2, "RightPip": 4 },
           { "LeftPip": 6, "RightPip": 0 },
           { "LeftPip": 3, "RightPip": 2 },
-          { "LeftPip": 1, "RightPip": 4 },
           { "LeftPip": 2, "RightPip": 2 }
         ],
         "rules": [
