@@ -810,6 +810,7 @@
           { "LeftPip": 5, "RightPip": 5 }
         ],
         "rules": [
+          { "Name": "Delta", "Type": "Delta", "Cells": ["B5", "B6"], "TargetValue": 2 },
           { "Name": "Equal", "Type": "Equal", "Cells": ["D1", "E1", "D2"], "TargetValue": 0 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C3", "D3"], "TargetValue": 8 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["E3", "F3", "E4"], "TargetValue": 10 },
