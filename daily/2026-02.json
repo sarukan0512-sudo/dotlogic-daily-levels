@@ -779,7 +779,7 @@
       "dayNumber": 17,
       "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
       "easy": {
-        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 5, "playableCells": ["B1", "C1", "B2", "D2", "E2", "A3", "B3", "C3", "D3", "A4", "A5"] },
+        "grid": { "columns": ["A", "B", "C", "D", "E", "F"], "rowCount": 4, "playableCells": ["B1", "C1", "B2", "D2", "E2", "A3", "B3", "C3", "D3", "A4"] },
         "dominoes": [
           { "LeftPip": 5, "RightPip": 3 },
           { "LeftPip": 4, "RightPip": 2 },
