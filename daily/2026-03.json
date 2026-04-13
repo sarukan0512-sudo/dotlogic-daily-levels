@@ -1881,5 +1881,7 @@
       { "Name": "Sum", "Type": "Sum", "Cells": ["A6", "A5"], "TargetValue": 8 }
     ],
     "metaRules": []
+    }
+   }
   }
 }
