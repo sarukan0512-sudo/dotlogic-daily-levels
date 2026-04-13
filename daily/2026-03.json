@@ -852,7 +852,7 @@
   }
 },
 
-    "2026-03-14": {
+    "2026-03-15": {
   "dayNumber": 43,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -916,7 +916,7 @@
   }
 },
 
-    "2026-03-15": {
+    "2026-03-16": {
   "dayNumber": 44,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -979,7 +979,7 @@
   }
 },
 
-    "2026-03-16": {
+    "2026-03-17": {
   "dayNumber": 45,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1037,7 +1037,7 @@
   }
 },
 
-    "2026-03-17": {
+    "2026-03-18": {
   "dayNumber": 46,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1097,7 +1097,7 @@
   }
 },
 
-    "2026-03-18": {
+    "2026-03-19": {
   "dayNumber": 47,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1156,7 +1156,7 @@
   }
 },
 
-    "2026-03-19": {
+    "2026-03-20": {
   "dayNumber": 48,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1218,7 +1218,7 @@
   }
 },
 
-    "2026-03-20": {
+    "2026-03-21": {
   "dayNumber": 49,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1280,7 +1280,7 @@
   }
 },
 
-    "2026-03-21": {
+    "2026-03-22": {
   "dayNumber": 50,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1339,7 +1339,7 @@
   }
 },
 
-    "2026-03-22": {
+    "2026-03-23": {
   "dayNumber": 51,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1398,7 +1398,7 @@
   }
 },
 
-    "2026-03-23": {
+    "2026-03-24": {
   "dayNumber": 52,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1457,7 +1457,7 @@
   }
 },
 
-   "2026-03-24": {
+   "2026-03-25": {
   "dayNumber": 53,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1515,7 +1515,7 @@
   }
 },
     
-   "2026-03-25": {
+   "2026-03-26": {
   "dayNumber": 54,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1575,7 +1575,7 @@
   }
 },
 
-    "2026-03-26": {
+    "2026-03-27": {
   "dayNumber": 55,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1636,7 +1636,7 @@
   }
 },
 
-    "2026-03-27": {
+    "2026-03-28": {
   "dayNumber": 56,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1695,7 +1695,7 @@
   }
 },
 
-    "2026-03-28": {
+    "2026-03-29": {
   "dayNumber": 57,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1759,7 +1759,7 @@
   }
 },
 
-"2026-03-29": {
+"2026-03-30": {
   "dayNumber": 58,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1822,7 +1822,7 @@
   }
 },
 
-    "2026-03-30": {
+    "2026-03-31": {
   "dayNumber": 59,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
@@ -1881,70 +1881,5 @@
       { "Name": "Sum", "Type": "Sum", "Cells": ["A6", "A5"], "TargetValue": 8 }
     ],
     "metaRules": []
-  }
-},
-
-    "2026-03-31": {
-  "dayNumber": 60,
-  "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
-  "easy": {
-    "grid": {
-      "columns": ["A","B","C","D","E"],
-      "rowCount": 5,
-      "playableCells": ["E1","E2","B3","C3","D3","E3","A4","B4","C4","D4","E4","C5","D5","E5"]
-    },
-    "dominoes": [
-      { "LeftPip": 5, "RightPip": 6 },
-      { "LeftPip": 1, "RightPip": 4 },
-      { "LeftPip": 4, "RightPip": 6 },
-      { "LeftPip": 1, "RightPip": 5 },
-      { "LeftPip": 1, "RightPip": 3 },
-      { "LeftPip": 0, "RightPip": 1 },
-      { "LeftPip": 3, "RightPip": 6 }
-    ],
-    "rules": [
-      { "Name": "Delta", "Type": "Delta", "Cells": ["E1", "E2"], "TargetValue": 4 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["E3", "D3", "C3"], "TargetValue": 14 },
-      { "Name": "NotEqual", "Type": "NotEqual", "Cells": ["B4", "A4"], "TargetValue": 0 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["C5", "C4"], "TargetValue": 8 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["E4", "D4"], "TargetValue": 7 }
-    ],
-    "metaRules": []
-  },
-  "hard": {
-    "grid": {
-      "columns": ["A","B","C","D","E","F","G"],
-      "rowCount": 7,
-      "playableCells": ["B1","C1","A2","B2","C2","D2","A3","B3","C3","D3","E3","F3","A4","B4","C4","D4","E4","F4","A5","C5","D5","F5","G5","C6","F6","F7"]
-    },
-    "dominoes": [
-      { "LeftPip": 0, "RightPip": 0 },
-      { "LeftPip": 3, "RightPip": 6 },
-      { "LeftPip": 3, "RightPip": 5 },
-      { "LeftPip": 0, "RightPip": 1 },
-      { "LeftPip": 3, "RightPip": 3 },
-      { "LeftPip": 3, "RightPip": 4 },
-      { "LeftPip": 0, "RightPip": 5 },
-      { "LeftPip": 1, "RightPip": 2 },
-      { "LeftPip": 4, "RightPip": 4 },
-      { "LeftPip": 2, "RightPip": 6 },
-      { "LeftPip": 5, "RightPip": 5 },
-      { "LeftPip": 2, "RightPip": 4 },
-      { "LeftPip": 5, "RightPip": 6 }
-    ],
-    "rules": [
-      { "Name": "Delta", "Type": "Delta", "Cells": ["B3", "B4"], "TargetValue": 0 },
-      { "Name": "LessThan", "Type": "LessThan", "Cells": ["F5", "G5"], "TargetValue": 7 },
-      { "Name": "Delta", "Type": "Delta", "Cells": ["F7", "F6"], "TargetValue": 1 },
-      { "Name": "LessThan", "Type": "LessThan", "Cells": ["C6", "C5"], "TargetValue": 7 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["C2", "C1", "C3"], "TargetValue": 1 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A2", "A4", "B2", "A5"], "TargetValue": 13 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["D4", "D3"], "TargetValue": 8 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["E4", "E3"], "TargetValue": 9 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["F3", "F4"], "TargetValue": 7 }
-    ],
-    "metaRules": []
-  }
-}
   }
 }
