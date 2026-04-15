@@ -1,10 +1,11 @@
 {
   "version": 4,
-  "lastUpdated": "2026-03-01T00:00:00Z",
-  "currentMonth": "2026-03",
+  "lastUpdated": "2026-04-15T00:00:00Z",
+  "currentMonth": "2026-04",
   "availableMonths": [
     "2026-02",
-    "2026-03"
+    "2026-03",
+    "2026-04"
   ],
   "baseUrl": "https://raw.githubusercontent.com/sarukan0512-sudo/dotlogic-daily-levels/main/daily"
 }
