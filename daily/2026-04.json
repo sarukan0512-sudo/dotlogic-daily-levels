@@ -10,10 +10,10 @@
     "grid": {
       "columns": ["A","B","C","D","E"],
       "rowCount": 5,
-      "playableCells": ["C1","D1","C2","D2","E2","C3","A4","B4","C4","A5","B5","C5"]
+      "playableCells": ["B1","D1","C2","D2","E2","C3","A4","B4","C4","A5","B5","C5"]
     },
     "dominoes": [
-      { "LeftPip": 3, "RightPip": 6 },
+      { "LeftPip": 2, "RightPip": 6 },
       { "LeftPip": 3, "RightPip": 3 },
       { "LeftPip": 4, "RightPip": 4 },
       { "LeftPip": 1, "RightPip": 6 },
