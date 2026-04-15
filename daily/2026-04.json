@@ -1411,56 +1411,59 @@
   }
 },
 
-    "2026-04-26": {
+   "2026-04-26": {
   "dayNumber": 85,
   "credits": { "easy": { "name": "KLIPSO" }, "hard": { "name": "KLIPSO" } },
   "easy": {
     "grid": {
-      "columns": ["A","B","C","D","E"],
-      "rowCount": 5,
-      "playableCells": ["A1","B1","C1","D1","E1","E2","C3","D3","E3","E4","D5","E5"]
+      "columns": ["A","B","C","D"],
+      "rowCount": 4,
+      "playableCells": ["A1","B1","A2","C2","D2","A3","B3","C3","D3","B4","C4","D4"]
     },
     "dominoes": [
-      { "LeftPip": 5, "RightPip": 6 },
-      { "LeftPip": 1, "RightPip": 2 },
-      { "LeftPip": 0, "RightPip": 3 },
-      { "LeftPip": 0, "RightPip": 2 },
-      { "LeftPip": 2, "RightPip": 2 },
-      { "LeftPip": 2, "RightPip": 4 }
+      { "LeftPip": 6, "RightPip": 6 },
+      { "LeftPip": 1, "RightPip": 3 },
+      { "LeftPip": 4, "RightPip": 5 },
+      { "LeftPip": 2, "RightPip": 3 },
+      { "LeftPip": 1, "RightPip": 4 },
+      { "LeftPip": 0, "RightPip": 3 }
     ],
     "rules": [
-      { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "A1", "C1"], "TargetValue": 6 },
-      { "Name": "NotEqual", "Type": "NotEqual", "Cells": ["D1", "E1"], "TargetValue": 0 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["E3", "D3"], "TargetValue": 8 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["E5", "E4"], "TargetValue": 3 }
+      { "Name": "LessThan", "Type": "LessThan", "Cells": ["C2", "D2"], "TargetValue": 10 },
+      { "Name": "GreaterThan", "Type": "GreaterThan", "Cells": ["D3", "C3"], "TargetValue": 4 },
+      { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "B3"], "TargetValue": 7 },
+      { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "A1"], "TargetValue": 5 },
+      { "Name": "Sum", "Type": "Sum", "Cells": ["C4", "D4"], "TargetValue": 3 }
     ],
     "metaRules": []
   },
   "hard": {
     "grid": {
-      "columns": ["A","B","C","D","E","F"],
+      "columns": ["A","B","C","D","E"],
       "rowCount": 6,
-      "playableCells": ["D1","A2","B2","D2","F2","B3","C3","D3","E3","F3","A4","B4","C4","D4","E4","B5","C5","D5","E5","D6"]
+      "playableCells": ["A1","B1","C1","A2","B2","C2","D2","E2","A3","B3","C3","D3","B4","C4","A5","B5","C5","D5","C6","D6"]
     },
     "dominoes": [
-      { "LeftPip": 2, "RightPip": 6 },
       { "LeftPip": 2, "RightPip": 4 },
-      { "LeftPip": 1, "RightPip": 6 },
       { "LeftPip": 3, "RightPip": 4 },
-      { "LeftPip": 2, "RightPip": 3 },
-      { "LeftPip": 4, "RightPip": 6 },
       { "LeftPip": 1, "RightPip": 2 },
-      { "LeftPip": 0, "RightPip": 2 },
-      { "LeftPip": 2, "RightPip": 2 },
-      { "LeftPip": 2, "RightPip": 5 }
+      { "LeftPip": 2, "RightPip": 5 },
+      { "LeftPip": 2, "RightPip": 3 },
+      { "LeftPip": 1, "RightPip": 5 },
+      { "LeftPip": 4, "RightPip": 5 },
+      { "LeftPip": 3, "RightPip": 6 },
+      { "LeftPip": 0, "RightPip": 1 },
+      { "LeftPip": 1, "RightPip": 4 }
     ],
     "rules": [
-      { "Name": "Sum", "Type": "Sum", "Cells": ["C3", "D3", "E3", "E4"], "TargetValue": 12 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["D5", "D4", "E5", "C4"], "TargetValue": 10 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["C5", "B5", "B4", "A4"], "TargetValue": 13 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "B2", "A2"], "TargetValue": 6 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "D1"], "TargetValue": 7 },
-      { "Name": "Sum", "Type": "Sum", "Cells": ["F3", "F2"], "TargetValue": 10 }
+      { "Name": "NotEqual", "Type": "NotEqual", "Cells": ["A5", "B5"], "TargetValue": 0 },
+      { "Name": "Delta", "Type": "Delta", "Cells": ["C5", "C6"], "TargetValue": 0 },
+      { "Name": "Sum", "Type": "Sum", "Cells": ["B1", "C1", "A1"], "TargetValue": 8 },
+      { "Name": "LessThan", "Type": "LessThan", "Cells": ["D6", "D5"], "TargetValue": 8 },
+      { "Name": "LessThan", "Type": "LessThan", "Cells": ["D3", "C3"], "TargetValue": 10 },
+      { "Name": "Sum", "Type": "Sum", "Cells": ["B3", "B4"], "TargetValue": 10 },
+      { "Name": "Sum", "Type": "Sum", "Cells": ["A3", "A2"], "TargetValue": 7 },
+      { "Name": "Sum", "Type": "Sum", "Cells": ["D2", "C2"], "TargetValue": 6 }
     ],
     "metaRules": []
   }
