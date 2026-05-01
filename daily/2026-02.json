@@ -1126,7 +1126,6 @@
         "rules": [
           { "Name": "Equal", "Type": "Equal", "Cells": ["A1", "B1", "B2"], "TargetValue": 0 },
           { "Name": "Delta", "Type": "Delta", "Cells": ["C1", "C2"], "TargetValue": 2 },
-          { "Name": "Equal", "Type": "Equal", "Cells": ["E1", "E2", "D2", "D3"], "TargetValue": 0 },
           { "Name": "Equal", "Type": "Equal", "Cells": ["B3", "B4", "C4"], "TargetValue": 0 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["A4", "A5"], "TargetValue": 3 },
           { "Name": "Sum", "Type": "Sum", "Cells": ["E1", "E2", "D2", "D3"], "TargetValue": 12 },
